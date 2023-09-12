@@ -12,6 +12,9 @@ const dictionary = {
         PASSWORD_PLACEHOLDER: "Enter your password",
         FORGET_PASSWROD: "Forgot password?",
       },
+      LOGIN_BTN: "Login now",
+      NOT_REGISTERD: "Not registered yet? ",
+      REGISTER_BTN: "Register →",
     },
   },
 };
