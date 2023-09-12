@@ -3,10 +3,15 @@ import d from "../../../../shared/dictionary";
 import CustomInput from "../../../ui/CustomInput/CustomInput";
 import "./LoginModal.scss";
 import CustomButton from "../../../ui/CustomButton/CustomButton";
+import { useNavigate } from "react-router-dom";
+import { LIBRARY_PATH } from "../../../../shared/paths";
 
 const LoginModal = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+
+  const handleLogin = () => navigate(LIBRARY_PATH);
 
   return (
     <div className="loginContainer">
@@ -34,7 +39,10 @@ const LoginModal = () => {
         </div>
 
         <div className="btnContainer">
-          <CustomButton label={d.EN.LOGIN_MODAL.LOGIN_BTN} />
+          <CustomButton
+            label={d.EN.LOGIN_MODAL.LOGIN_BTN}
+            handler={handleLogin}
+          />
 
           <div className="registerContainer">
             <span>{d.EN.LOGIN_MODAL.NOT_REGISTERD}</span>
