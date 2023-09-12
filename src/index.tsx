@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import LoginModal from "./components/modules/LoginModal/LoginModal";
 import Library from "./components/modules/Library/Library";
 import Layout from "./components/modules/Layout/Layout";
+import LoginPage from "./components/modules/Login/Page/LoginPage";
 import "./index.scss";
 
 const router = createBrowserRouter([
@@ -13,7 +13,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/login",
-    element: <LoginModal />,
+    element: <LoginPage />,
   },
   {
     path: "/library",

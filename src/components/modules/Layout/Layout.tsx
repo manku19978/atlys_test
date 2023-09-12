@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Layout.scss";
-import Loader from "../Loader/Loader";
+import Loader from "../../ui/Loader/Loader";
 
 const Layout = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);

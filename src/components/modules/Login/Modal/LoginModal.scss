@@ -1,0 +1,29 @@
+@import "../../../../styles/variables.scss";
+@import "../../../../styles/mixins.scss";
+
+.loginContainer {
+  @include modalCard;
+}
+
+.headingContainer {
+  text-align: center;
+}
+
+.welcome {
+  color: #6b6c70;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.42px;
+  margin-bottom: 8px;
+}
+
+.login {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 45px;
+}
+
+.inputContainer {
+  gap: 16px;
+}

@@ -1,0 +1,29 @@
+@import "./variables.scss";
+
+@mixin modalCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 40px 24px;
+  background: $background-card;
+  border-radius: 8px;
+  min-width: 463px;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 2px solid transparent;
+    border-radius: inherit;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+      linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: xor;
+    background: linear-gradient(91.87deg, #969696, #343434) border-box;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
