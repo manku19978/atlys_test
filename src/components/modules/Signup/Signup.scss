@@ -1,0 +1,64 @@
+@import "../../../styles/mixins.scss";
+
+.signupWrapper {
+  @include modalCard;
+  position: relative;
+
+  .signupCloseBtn {
+    position: absolute;
+    z-index: 1;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #131319;
+    top: 16px;
+    left: 415px;
+    cursor: pointer;
+  }
+
+  .signupTitleContainer {
+    text-align: center;
+    margin-bottom: 45px;
+
+    .signup {
+      color: #6b6c70;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.42px;
+      margin-bottom: 8px;
+    }
+
+    .createAccount {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+  .signupContainer {
+    position: relative;
+    z-index: 1;
+
+    .signupInputContainer {
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .signupBtnContainer {
+      margin-bottom: 12px;
+    }
+
+    .haveAccount {
+      color: #7f8084;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .signupTxtBtn {
+      color: #c5c7ca;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+  }
+}

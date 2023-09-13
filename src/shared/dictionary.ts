@@ -21,6 +21,23 @@ const dictionary = {
       POST_BTN: "Post",
       PLACEHOLDER: "How are you feeling today?",
     },
+    SIGN_UP_MODAL: {
+      TITLE: {
+        SIGN_UP: "SIGN UP",
+        CREATE_ACCOUNT: "Create an account to continue",
+      },
+      INPUT: {
+        EMAIL_LABEL: "Email",
+        USERNAME_LABEL: "Username",
+        PASSWORD_LABEL: "Password",
+        EMAIL_PLACEHOLDER: "Enter your email",
+        USERNAME_PLACEHOLDER: "Choose a preferred username",
+        PASSWORD_PLACEHOLDER: "Choose a strong password",
+      },
+      CONTINUE_BTN: "Continue",
+      ALREADY_ACCOUNT: "Already have an account? ",
+      SIGN_UP_BTN: "Login →",
+    },
   },
 };
 

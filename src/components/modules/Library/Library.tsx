@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import CreatePost from "../CreatePost/CreatePost";
 import Post from "../Post/Post";
@@ -8,13 +8,21 @@ import "./Library.scss";
 
 const Library = () => {
   const [posts, setPosts] = useState(initialPostList);
-  const [showPopup, setShowPopup] = useState(true);
+  const [showPopup, setShowPopup] = useState(false);
 
   const togglePopup = () => setShowPopup((prev) => !prev);
 
   const postList = posts.map((post, index) => {
     return <Post key={index} data={post} />;
   });
+
+  useEffect(() => {
+    if (showPopup) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "visible";
+    }
+  }, [showPopup]);
 
   return (
     <div className="wrapper">
