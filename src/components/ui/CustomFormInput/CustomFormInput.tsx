@@ -1,8 +1,8 @@
 import { SetStateAction, Dispatch } from "react";
 import d from "../../../shared/dictionary";
-import "./CustomInput.scss";
+import "./CustomFormInput.scss";
 
-interface CustomInputProps {
+interface CustomFormInputProps {
   label: string;
   placeholder: string;
   value: string;
@@ -10,7 +10,7 @@ interface CustomInputProps {
   isPassword?: boolean;
 }
 
-const CustomInput: React.FC<CustomInputProps> = ({
+const CustomFormInput: React.FC<CustomFormInputProps> = ({
   label,
   placeholder,
   value,
@@ -42,4 +42,4 @@ const CustomInput: React.FC<CustomInputProps> = ({
   );
 };
 
-export default CustomInput;
+export default CustomFormInput;

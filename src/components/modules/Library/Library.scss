@@ -1,0 +1,33 @@
+@import "../../../styles//variables.scss";
+
+.wrapper {
+  background: $background-main;
+}
+
+.libraryContainer {
+  max-width: 700px;
+  margin: 0 auto;
+
+  .headerContainer {
+    padding-top: 69px;
+    margin-bottom: 40px;
+
+    .name {
+      color: #c5c7ca;
+      font-size: 28px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    .greeting {
+      color: #7f8084;
+      font-size: 16px;
+      line-height: 150%;
+      max-width: 580px;
+    }
+  }
+
+  .postContainer {
+    gap: 16px;
+  }
+}

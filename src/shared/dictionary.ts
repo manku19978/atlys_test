@@ -16,6 +16,11 @@ const dictionary = {
       NOT_REGISTERD: "Not registered yet? ",
       REGISTER_BTN: "Register →",
     },
+    CREATE_POST: {
+      TITLE: "Create post",
+      POST_BTN: "Post",
+      PLACEHOLDER: "How are you feeling today?",
+    },
   },
 };
 

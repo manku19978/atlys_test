@@ -1,6 +1,6 @@
 import { useState } from "react";
 import d from "../../../../shared/dictionary";
-import CustomInput from "../../../ui/CustomInput/CustomInput";
+import CustomFormInput from "../../../ui/CustomFormInput/CustomFormInput";
 import "./LoginModal.scss";
 import CustomButton from "../../../ui/CustomButton/CustomButton";
 import { useNavigate } from "react-router-dom";
@@ -22,14 +22,14 @@ const LoginModal = () => {
         </div>
 
         <div className="inputContainer flex flex-col">
-          <CustomInput
+          <CustomFormInput
             label={d.EN.LOGIN_MODAL.INPUT.EMAIL_LABEL}
             placeholder={d.EN.LOGIN_MODAL.INPUT.EMAIL_PLACEHOLDER}
             value={username}
             setValue={setUsername}
           />
 
-          <CustomInput
+          <CustomFormInput
             label={d.EN.LOGIN_MODAL.INPUT.PASSWORD_LABEL}
             placeholder={d.EN.LOGIN_MODAL.INPUT.PASSWORD_PLACEHOLDER}
             value={password}

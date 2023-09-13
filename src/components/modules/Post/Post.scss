@@ -1,0 +1,57 @@
+@import "../../../styles/variables.scss";
+
+.postWrapper {
+  padding: 24px 20px;
+  background: $background-card;
+  border-radius: 8px;
+  border: 2px solid #35373b;
+
+  .profileRow {
+    margin-bottom: 20px;
+
+    .avatarContainer {
+      gap: 16px;
+
+      .imgContainer {
+        height: 44px;
+        width: 44px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+      }
+
+      .name {
+        color: #c5c7ca;
+        font-weight: 500;
+        margin-bottom: 4px;
+      }
+
+      .time {
+        color: #7f8084;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .postText {
+    border-radius: 8px;
+    background: #191920;
+    padding: 15px 16px;
+    gap: 16px;
+
+    .waveIcon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: $background-card;
+      align-self: flex-start;
+      flex-shrink: 0;
+    }
+
+    .text {
+      color: #7f8084;
+      line-height: 150%;
+    }
+  }
+}
