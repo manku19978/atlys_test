@@ -1,3 +1,4 @@
 import Logo from "./Logo";
+import Close from "./Close";
 
-export { Logo };
+export { Logo, Close };

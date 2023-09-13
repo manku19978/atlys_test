@@ -3,6 +3,20 @@
 
 .loginContainer {
   @include modalCard;
+  position: relative;
+
+  .closeBtn {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #131319;
+    top: 16px;
+    left: 415px;
+    cursor: pointer;
+    z-index: 1;
+    margin-left: auto;
+  }
 }
 
 .headingContainer {

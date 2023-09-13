@@ -5,8 +5,14 @@ import "./LoginModal.scss";
 import CustomButton from "../../../ui/CustomButton/CustomButton";
 import { useNavigate } from "react-router-dom";
 import { LIBRARY_PATH } from "../../../../shared/paths";
+import { Close } from "../../../icons";
 
-const LoginModal = () => {
+interface LoginModalProps {
+  isPopup?: boolean;
+  closeHandler?: () => void;
+}
+
+const LoginModal: React.FC<LoginModalProps> = ({ isPopup, closeHandler }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
@@ -15,6 +21,15 @@ const LoginModal = () => {
 
   return (
     <div className="loginContainer">
+      {isPopup && (
+        <div
+          className="closeBtn flex align-center justify-center"
+          onClick={closeHandler}
+        >
+          <Close />
+        </div>
+      )}
+
       <div className="loginWrapper">
         <div className="headingContainer">
           <p className="welcome">{d.EN.LOGIN_MODAL.TITLE.WELCOME_BACK}</p>
